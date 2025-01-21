@@ -1,0 +1,33 @@
+{
+	"id": "20d2e5ed-8638-4f28-bf82-287f6662a6cb",
+	"name": "Development",
+	"values": [
+		{
+			"key": "base_url",
+			"value": "https://localhost:7276/api",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "auth_token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "environment_name",
+			"value": "Development",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "user_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-01-21T22:42:28.657Z",
+	"_postman_exported_using": "Postman/11.29.2"
+}

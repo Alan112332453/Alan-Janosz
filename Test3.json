@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "4582e090-c65c-47b6-a241-f8c26d0b7a4c",
+		"name": "Pobranie danych o konkretnym uzytkowniku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36255988"
+	},
+	"item": [
+		{
+			"name": "Pobranie po id user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Sprawdzenie, czy odpowiedź ma status 200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// Sprawdzenie, czy czas odpowiedzi jest poniżej 500 ms\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"\r",
+							"// Sprawdzenie, czy odpowiedź jest w formacie JSON\r",
+							"pm.test(\"Response is JSON\", function () {\r",
+							"    pm.response.to.be.json;\r",
+							"});\r",
+							"\r",
+							"// Sprawdzenie, czy odpowiedź zawiera określone pole (np. \"id\")\r",
+							"pm.test(\"Response has id field\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property(\"id\");\r",
+							"});\r",
+							"\r",
+							"// Sprawdzenie, czy pole \"name\" w odpowiedzi ma odpowiednią wartość\r",
+							"pm.test(\"Name is correct\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.name).to.eql(\"John Doe\"); // Zmień na wartość, której oczekujesz\r",
+							"});\r",
+							"\r",
+							"// Sprawdzenie, czy pole \"email\" jest w poprawnym formacie\r",
+							"pm.test(\"Email is valid\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.email).to.match(/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/);\r",
+							"});\r",
+							"\r",
+							"// Logowanie odpowiedzi do konsoli Postmana\r",
+							"console.log(\"Odpowiedź JSON:\", pm.response.json());\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7276/api/users/{{user_id}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7276",
+					"path": [
+						"api",
+						"users",
+						"{{user_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pobranie danych o nowym user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
