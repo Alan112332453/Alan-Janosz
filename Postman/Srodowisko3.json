@@ -1,0 +1,27 @@
+{
+	"id": "2b48da28-b291-4c14-81fa-f8b31be4ada7",
+	"name": "Testing",
+	"values": [
+		{
+			"key": "base_url",
+			"value": "https://localhost:7276/api",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "auth_token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "environment_name",
+			"value": "Testing",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-01-21T22:43:01.006Z",
+	"_postman_exported_using": "Postman/11.29.2"
+}
