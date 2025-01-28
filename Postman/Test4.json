@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "znajdywanie usera po spodanich",
+			"name": "znajdywanie usera po atrybucie",
 			"request": {
 				"method": "GET",
 				"header": []
