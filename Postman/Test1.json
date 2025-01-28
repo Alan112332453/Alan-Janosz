@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "strzal w nowego usera",
+			"name": "dodanie  nowego usera",
 			"request": {
 				"method": "GET",
 				"header": []
