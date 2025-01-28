@@ -1,13 +1,13 @@
 {
 	"info": {
-		"_postman_id": "6ac1077b-288b-4d3b-817a-85b0cf7e8e0c",
-		"name": "Update usera",
+		"_postman_id": "c0c56f5e-d7e2-4467-91a0-c13c51a576a4",
+		"name": "Wyszukiwanie po okreslonym atrybucie",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "36255988"
 	},
 	"item": [
 		{
-			"name": "Update danych usera",
+			"name": "szukanie usera po okreslonym atrybucie",
 			"request": {
 				"method": "GET",
 				"header": []
