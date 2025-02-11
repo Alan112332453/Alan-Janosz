@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "f6cd7871-c6fd-4b7d-aed2-0e3254086c70",
+		"name": "Sprawdzenie, czy API odrzuca zbyt długie ciągi znaków",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36255988"
+	},
+	"item": [
+		{
+			"name": "Sprawdzenie, czy API odrzuca zbyt długie ciągi znaków",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
