@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "f4ecdbdb-21cb-435b-a140-3626d91f8ef2",
+		"name": "Sprawdzenie, czy API pozwala na aktualizację tylko jednego pola bez zmiany innych.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36255988"
+	},
+	"item": [
+		{
+			"name": "Dodanie nowego user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "sprawdzenie id nowego usera",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "zmiana emailu usera",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
